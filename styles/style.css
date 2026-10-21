@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg-primary: #070b18;
+    --bg-secondary: #10182d;
+    --accent-blue: #3b82f6;
+    --accent-purple: #8b5cf6;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: rgba(148, 163, 184, 0.18);
+}
+
+.stApp {
+    background:
+        radial-gradient(ellipse at top right, #172554 0%, transparent 42%),
+        linear-gradient(135deg, #070b18, #0b1020);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+}
+
+.block-container {
+    max-width: 1500px;
+    padding-top: 1.8rem;
+    padding-bottom: 2rem;
+}
+
+header[data-testid="stHeader"] {
+    background: transparent;
+}
+
+section[data-testid="stSidebar"] {
+    background: rgba(10, 16, 34, 0.96);
+    border-right: 1px solid var(--border-color);
+}
+
+.hero-card {
+    padding: 32px;
+    margin-bottom: 28px;
+    border-radius: 24px;
+    background: linear-gradient(115deg, #121e3e, #20113b);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.hero-title {
+    font-size: clamp(30px, 4vw, 48px);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    margin: 0;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #60a5fa, #c084fc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.glass-card {
+    padding: 22px;
+    border-radius: 20px;
+    background: rgba(17, 26, 48, 0.82);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+.metric-card {
+    padding: 20px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #151f3a, #101629);
+    border: 1px solid #2c3a5a;
+}
+
+.metric-label {
+    color: #94a3b8;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.metric-value {
+    color: #f8fafc;
+    font-size: 23px;
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+.stButton > button,
+.stDownloadButton > button {
+    min-height: 44px;
+    border-radius: 12px;
+    border: 1px solid rgba(139, 92, 246, 0.5);
+    background: linear-gradient(100deg, #2563eb, #7c3aed);
+    color: white;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    border-color: #c4b5fd;
+    box-shadow: 0 0 20px rgba(124, 58, 237, 0.25);
+    color: white;
+    transform: translateY(-1px);
+}
+
+div[data-baseweb="select"] > div {
+    background: #111a30;
+    border-color: #334155;
+    border-radius: 10px;
+}
+
+div[data-testid="stSlider"] [role="slider"] {
+    background: #8b5cf6;
+}
+
+.brand-footer {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 13px;
+    padding: 25px 10px;
+    margin-top: 35px;
+    border-top: 1px solid var(--border-color);
+}
+
+.brand-footer span {
+    color: #c084fc;
+    font-weight: 700;
+}
+
+#MainMenu,
+footer {
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    .hero-card {
+        padding: 22px;
+        border-radius: 18px;
+    }
+
+    .glass-card {
+        padding: 16px;
+    }
+}
